@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    /* background: rgb(123,7,229); */
+/* background: linear-gradient(90deg, rgba(123,7,229,1) 0%, rgba(22,178,169,1) 37%, rgba(41,103,225,1) 98%, rgba(0,212,255,1) 100%); */
+font-family: 'Open Sans', sans-serif;
+background: url(/images/pexels-breakingpic-3243.jpg);
+background-size: cover;
+
+}
+.container-box{
+    height: 200px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.221);
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center; 
+    margin: auto; margin-top: 50px;
+
+   
+}
+.container-box h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #143068;
+}
+.container-box h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.Note-box{
+    height: 52px;
+    width: 378px;
+     background-color: rgba(255, 255, 255, 0.832);
+     border: 1px solid black;
+    margin: auto; margin-left: 58px;
+    padding-top: 0px;
+    border-radius: 50px;
+    display:flex;
+    border: none;
+
+}
+#addBtn{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 50px;
+    height: 53px;
+    width: 100px;
+    /* padding: 16px 50px; */
+    margin: auto;
+    border: none;
+    background-color: orangered;
+    font-weight: bold;
+}
+.list-box{
+    position: relative;
+}
+#clr{
+    position: absolute;
+    cursor: pointer;
+    left: 47%;
+    margin-top: 10px;
+    height: 50px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: rgb(201, 193, 190);
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    padding: 5px;
+}
+
+.Note-box input{
+    flex: 1;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: none;
+    margin-left: 20px;
+    
+}
+
+.list-box
+{
+    
+    width: 500px;
+    border: 2px solid black; 
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.221);
+    margin: auto; margin-top: 10px;
+    font-size: x-large;
+    display: none;
+    
+}
+.list-box{
+    list-style-type: circle;
+    overflow-y: scroll;/* Add vertical scroll bar */
+    height: 300px; /* Adjust the maximum height as needed */
+}
+.list-container::-webkit-scrollbar {
+
+    height: 10px; /* Set the height of the scrollbar */
+}
+.list-container::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Set the color of the scrollbar thumb */
+    border-radius: 5px; /* Set the border radius of the scrollbar thumb */
+
+}
+.list-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the color of the scrollbar track */
+
+}
+
+  
+ul li{
+    cursor: pointer;
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(../images/checked.png);
+    background-size: cover;
+
+}
+ul li span{
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    cursor: pointer;
+    background-color: #edeef0;
+}
+@media screen and (max-width:400px)
+{   body{
+    background-size: cover;
+}
+    .container-box{
+        width: 365px;
+        
+    }
+    .container-box h2{
+        font-size: 25px;
+    }
+    .Note-box{
+        display: flex;
+        margin-left: 0;
+        width:16rem;
+        height: 3rem;
+        position: absolute;
+        left: 60px;
+    }
+    #addBtn{
+        position: absolute;
+        top: 65px;
+        left: 75px;
+        height: 3rem;
+
+    }
+    .list-box{
+        width: 23rem;
+        height: auto;
+    }
+    #clr{
+        position: absolute;
+        left: 145px;
+    }
+}

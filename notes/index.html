@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do APP</title>
+</head>
+    <link rel="stylesheet" href="style.css">
+    
+<body>
+        <div class="container-box">
+            <h2>To-Do List
+                <img src="./images/icon.png" alt="">
+            </h2> 
+           
+            <div class="Note-box">
+                <input id="input-box" type="text" placeholder="Type Your Note" style="border-radius: 10px;">
+                <button id="addBtn" onclick="addTask()">Add Task</button>
+            </div>
+            
+        </div>
+        <div id="list-box" class="list-box">
+            <ul id="list-container" style=" list-style-type: circle">
+                <!-- <li class="checked">This is a Task.</li>
+                    <li>This is a Task.</li>
+                    <li>This is a Task.</li> -->
+                </ul>
+                
+            </div>
+            <button id="clr" onclick="Clearall()">Clear All</button>
+        <script src="script.js"></script>
+</body>
+</html>
